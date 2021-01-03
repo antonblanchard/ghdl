@@ -1,0 +1,623 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>&lt;no title&gt; &mdash; GHDL 1.0-dev documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="_static/icon.png"/>
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="author" title="About these documents" href="about.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0-dev
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="about.html">About GHDL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="licenses.html">Copyrights | Licenses</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting GHDL</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="getting/Releases.html">Releases and sources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting/index.html">Building GHDL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting/PrecompileVendorPrimitives.html">Precompile Vendor Primitives</a></li>
+</ul>
+<p class="caption"><span class="caption-text">GHDL usage</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="quick_start/README.html">Quick Start Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="using/InvokingGHDL.html">Invoking GHDL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="using/Simulation.html">Simulation (runtime)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="using/Synthesis.html">Synthesis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="using/CommandReference.html">Additional Command Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="using/Foreign.html">Co-simulation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="using/ImplementationOfVHDL.html">Implementation of VHDL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="using/ImplementationOfVITAL.html">Implementation of VITAL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="using/pyGHDL/index.html">Python Interface</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Development</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="development/Debugging.html">Debugging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="development/CodingStyle.html">Coding Style</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Internals</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="internals/Overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="internals/Frontend.html">Front-end</a></li>
+<li class="toctree-l1"><a class="reference internal" href="internals/AST.html">AST</a></li>
+<li class="toctree-l1"><a class="reference internal" href="internals/RTI.html">Run Time Information (RTI)</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Index</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="genindex.html">Index</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">GHDL</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>&lt;no title&gt;</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            
+              <a href="https://github.com/antonblanchard/ghdl/blob/master/doc/COPYING_DOC.md" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <p>License.Attribution-ShareAlike 4.0 International</p>
+<p>=======================================================================</p>
+<p>Creative Commons Corporation (“Creative Commons”) is not a law firm and
+does not provide legal services or legal advice. Distribution of
+Creative Commons public licenses does not create a lawyer-client or
+other relationship. Creative Commons makes its licenses and related
+information available on an “as-is” basis. Creative Commons gives no
+warranties regarding its licenses, any material licensed under their
+terms and conditions, or any related information. Creative Commons
+disclaims all liability for damages resulting from their use to the
+fullest extent possible.</p>
+<p>Using Creative Commons Public Licenses</p>
+<p>Creative Commons public licenses provide a standard set of terms and
+conditions that creators and other rights holders may use to share
+original works of authorship and other material subject to copyright
+and certain other rights specified in the public license below. The
+following considerations are for informational purposes only, are not
+exhaustive, and do not form part of our licenses.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span> <span class="n">Considerations</span> <span class="k">for</span> <span class="n">licensors</span><span class="p">:</span> <span class="n">Our</span> <span class="n">public</span> <span class="n">licenses</span> <span class="n">are</span>
+ <span class="n">intended</span> <span class="k">for</span> <span class="n">use</span> <span class="n">by</span> <span class="n">those</span> <span class="n">authorized</span> <span class="n">to</span> <span class="n">give</span> <span class="n">the</span> <span class="n">public</span>
+ <span class="n">permission</span> <span class="n">to</span> <span class="n">use</span> <span class="n">material</span> <span class="ow">in</span> <span class="n">ways</span> <span class="n">otherwise</span> <span class="n">restricted</span> <span class="n">by</span>
+ <span class="n">copyright</span> <span class="ow">and</span> <span class="n">certain</span> <span class="n">other</span> <span class="n">rights</span><span class="o">.</span> <span class="n">Our</span> <span class="n">licenses</span> <span class="n">are</span>
+ <span class="n">irrevocable</span><span class="o">.</span> <span class="n">Licensors</span> <span class="n">should</span> <span class="n">read</span> <span class="ow">and</span> <span class="n">understand</span> <span class="n">the</span> <span class="n">terms</span>
+ <span class="ow">and</span> <span class="n">conditions</span> <span class="n">of</span> <span class="n">the</span> <span class="n">license</span> <span class="n">they</span> <span class="n">choose</span> <span class="n">before</span> <span class="n">applying</span> <span class="n">it</span><span class="o">.</span>
+ <span class="n">Licensors</span> <span class="n">should</span> <span class="n">also</span> <span class="n">secure</span> <span class="nb">all</span> <span class="n">rights</span> <span class="n">necessary</span> <span class="n">before</span>
+ <span class="n">applying</span> <span class="n">our</span> <span class="n">licenses</span> <span class="n">so</span> <span class="n">that</span> <span class="n">the</span> <span class="n">public</span> <span class="n">can</span> <span class="n">reuse</span> <span class="n">the</span>
+ <span class="n">material</span> <span class="k">as</span> <span class="n">expected</span><span class="o">.</span> <span class="n">Licensors</span> <span class="n">should</span> <span class="n">clearly</span> <span class="n">mark</span> <span class="nb">any</span>
+ <span class="n">material</span> <span class="ow">not</span> <span class="n">subject</span> <span class="n">to</span> <span class="n">the</span> <span class="n">license</span><span class="o">.</span> <span class="n">This</span> <span class="n">includes</span> <span class="n">other</span> <span class="n">CC</span><span class="o">-</span>
+ <span class="n">licensed</span> <span class="n">material</span><span class="p">,</span> <span class="ow">or</span> <span class="n">material</span> <span class="n">used</span> <span class="n">under</span> <span class="n">an</span> <span class="n">exception</span> <span class="ow">or</span>
+ <span class="n">limitation</span> <span class="n">to</span> <span class="n">copyright</span><span class="o">.</span> <span class="n">More</span> <span class="n">considerations</span> <span class="k">for</span> <span class="n">licensors</span><span class="p">:</span>
+<span class="n">wiki</span><span class="o">.</span><span class="n">creativecommons</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">Considerations_for_licensors</span>
+
+ <span class="n">Considerations</span> <span class="k">for</span> <span class="n">the</span> <span class="n">public</span><span class="p">:</span> <span class="n">By</span> <span class="n">using</span> <span class="n">one</span> <span class="n">of</span> <span class="n">our</span> <span class="n">public</span>
+ <span class="n">licenses</span><span class="p">,</span> <span class="n">a</span> <span class="n">licensor</span> <span class="n">grants</span> <span class="n">the</span> <span class="n">public</span> <span class="n">permission</span> <span class="n">to</span> <span class="n">use</span> <span class="n">the</span>
+ <span class="n">licensed</span> <span class="n">material</span> <span class="n">under</span> <span class="n">specified</span> <span class="n">terms</span> <span class="ow">and</span> <span class="n">conditions</span><span class="o">.</span> <span class="n">If</span>
+ <span class="n">the</span> <span class="n">licensor</span><span class="s1">&#39;s permission is not necessary for any reason--for</span>
+ <span class="n">example</span><span class="p">,</span> <span class="n">because</span> <span class="n">of</span> <span class="nb">any</span> <span class="n">applicable</span> <span class="n">exception</span> <span class="ow">or</span> <span class="n">limitation</span> <span class="n">to</span>
+ <span class="n">copyright</span><span class="o">--</span><span class="n">then</span> <span class="n">that</span> <span class="n">use</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">regulated</span> <span class="n">by</span> <span class="n">the</span> <span class="n">license</span><span class="o">.</span> <span class="n">Our</span>
+ <span class="n">licenses</span> <span class="n">grant</span> <span class="n">only</span> <span class="n">permissions</span> <span class="n">under</span> <span class="n">copyright</span> <span class="ow">and</span> <span class="n">certain</span>
+ <span class="n">other</span> <span class="n">rights</span> <span class="n">that</span> <span class="n">a</span> <span class="n">licensor</span> <span class="n">has</span> <span class="n">authority</span> <span class="n">to</span> <span class="n">grant</span><span class="o">.</span> <span class="n">Use</span> <span class="n">of</span>
+ <span class="n">the</span> <span class="n">licensed</span> <span class="n">material</span> <span class="n">may</span> <span class="n">still</span> <span class="n">be</span> <span class="n">restricted</span> <span class="k">for</span> <span class="n">other</span>
+ <span class="n">reasons</span><span class="p">,</span> <span class="n">including</span> <span class="n">because</span> <span class="n">others</span> <span class="n">have</span> <span class="n">copyright</span> <span class="ow">or</span> <span class="n">other</span>
+ <span class="n">rights</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">material</span><span class="o">.</span> <span class="n">A</span> <span class="n">licensor</span> <span class="n">may</span> <span class="n">make</span> <span class="n">special</span> <span class="n">requests</span><span class="p">,</span>
+ <span class="n">such</span> <span class="k">as</span> <span class="n">asking</span> <span class="n">that</span> <span class="nb">all</span> <span class="n">changes</span> <span class="n">be</span> <span class="n">marked</span> <span class="ow">or</span> <span class="n">described</span><span class="o">.</span>
+ <span class="n">Although</span> <span class="ow">not</span> <span class="n">required</span> <span class="n">by</span> <span class="n">our</span> <span class="n">licenses</span><span class="p">,</span> <span class="n">you</span> <span class="n">are</span> <span class="n">encouraged</span> <span class="n">to</span>
+ <span class="n">respect</span> <span class="n">those</span> <span class="n">requests</span> <span class="n">where</span> <span class="n">reasonable</span><span class="o">.</span> <span class="n">More_considerations</span>
+ <span class="k">for</span> <span class="n">the</span> <span class="n">public</span><span class="p">:</span>
+<span class="n">wiki</span><span class="o">.</span><span class="n">creativecommons</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">Considerations_for_licensees</span>
+</pre></div>
+</div>
+<p>=======================================================================</p>
+<p>Creative Commons Attribution-ShareAlike 4.0 International Public
+License</p>
+<p>By exercising the Licensed Rights (defined below), You accept and agree
+to be bound by the terms and conditions of this Creative Commons
+Attribution-ShareAlike 4.0 International Public License (“Public
+License”). To the extent this Public License may be interpreted as a
+contract, You are granted the Licensed Rights in consideration of Your
+acceptance of these terms and conditions, and the Licensor grants You
+such rights in consideration of benefits the Licensor receives from
+making the Licensed Material available under these terms and
+conditions.</p>
+<p>Section 1 – Definitions.</p>
+<p>a. Adapted Material means material subject to Copyright and Similar
+Rights that is derived from or based upon the Licensed Material
+and in which the Licensed Material is translated, altered,
+arranged, transformed, or otherwise modified in a manner requiring
+permission under the Copyright and Similar Rights held by the
+Licensor. For purposes of this Public License, where the Licensed
+Material is a musical work, performance, or sound recording,
+Adapted Material is always produced where the Licensed Material is
+synched in timed relation with a moving image.</p>
+<p>b. Adapter’s License means the license You apply to Your Copyright
+and Similar Rights in Your contributions to Adapted Material in
+accordance with the terms and conditions of this Public License.</p>
+<p>c. BY-SA Compatible License means a license listed at
+creativecommons.org/compatiblelicenses, approved by Creative
+Commons as essentially the equivalent of this Public License.</p>
+<p>d. Copyright and Similar Rights means copyright and/or similar rights
+closely related to copyright including, without limitation,
+performance, broadcast, sound recording, and Sui Generis Database
+Rights, without regard to how the rights are labeled or
+categorized. For purposes of this Public License, the rights
+specified in Section 2(b)(1)-(2) are not Copyright and Similar
+Rights.</p>
+<p>e. Effective Technological Measures means those measures that, in the
+absence of proper authority, may not be circumvented under laws
+fulfilling obligations under Article 11 of the WIPO Copyright
+Treaty adopted on December 20, 1996, and/or similar international
+agreements.</p>
+<p>f. Exceptions and Limitations means fair use, fair dealing, and/or
+any other exception or limitation to Copyright and Similar Rights
+that applies to Your use of the Licensed Material.</p>
+<p>g. License Elements means the license attributes listed in the name
+of a Creative Commons Public License. The License Elements of this
+Public License are Attribution and ShareAlike.</p>
+<p>h. Licensed Material means the artistic or literary work, database,
+or other material to which the Licensor applied this Public
+License.</p>
+<p>i. Licensed Rights means the rights granted to You subject to the
+terms and conditions of this Public License, which are limited to
+all Copyright and Similar Rights that apply to Your use of the
+Licensed Material and that the Licensor has authority to license.</p>
+<p>j. Licensor means the individual(s) or entity(ies) granting rights
+under this Public License.</p>
+<p>k. Share means to provide material to the public by any means or
+process that requires permission under the Licensed Rights, such
+as reproduction, public display, public performance, distribution,
+dissemination, communication, or importation, and to make material
+available to the public including in ways that members of the
+public may access the material from a place and at a time
+individually chosen by them.</p>
+<p>l. Sui Generis Database Rights means rights other than copyright
+resulting from Directive 96/9/EC of the European Parliament and of
+the Council of 11 March 1996 on the legal protection of databases,
+as amended and/or succeeded, as well as other essentially
+equivalent rights anywhere in the world.</p>
+<p>m. You means the individual or entity exercising the Licensed Rights
+under this Public License. Your has a corresponding meaning.</p>
+<p>Section 2 – Scope.</p>
+<p>a. License grant.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>   <span class="mf">1.</span> <span class="n">Subject</span> <span class="n">to</span> <span class="n">the</span> <span class="n">terms</span> <span class="ow">and</span> <span class="n">conditions</span> <span class="n">of</span> <span class="n">this</span> <span class="n">Public</span> <span class="n">License</span><span class="p">,</span>
+      <span class="n">the</span> <span class="n">Licensor</span> <span class="n">hereby</span> <span class="n">grants</span> <span class="n">You</span> <span class="n">a</span> <span class="n">worldwide</span><span class="p">,</span> <span class="n">royalty</span><span class="o">-</span><span class="n">free</span><span class="p">,</span>
+      <span class="n">non</span><span class="o">-</span><span class="n">sublicensable</span><span class="p">,</span> <span class="n">non</span><span class="o">-</span><span class="n">exclusive</span><span class="p">,</span> <span class="n">irrevocable</span> <span class="n">license</span> <span class="n">to</span>
+      <span class="n">exercise</span> <span class="n">the</span> <span class="n">Licensed</span> <span class="n">Rights</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">Licensed</span> <span class="n">Material</span> <span class="n">to</span><span class="p">:</span>
+
+        <span class="n">a</span><span class="o">.</span> <span class="n">reproduce</span> <span class="ow">and</span> <span class="n">Share</span> <span class="n">the</span> <span class="n">Licensed</span> <span class="n">Material</span><span class="p">,</span> <span class="ow">in</span> <span class="n">whole</span> <span class="ow">or</span>
+           <span class="ow">in</span> <span class="n">part</span><span class="p">;</span> <span class="ow">and</span>
+
+        <span class="n">b</span><span class="o">.</span> <span class="n">produce</span><span class="p">,</span> <span class="n">reproduce</span><span class="p">,</span> <span class="ow">and</span> <span class="n">Share</span> <span class="n">Adapted</span> <span class="n">Material</span><span class="o">.</span>
+
+   <span class="mf">2.</span> <span class="n">Exceptions</span> <span class="ow">and</span> <span class="n">Limitations</span><span class="o">.</span> <span class="n">For</span> <span class="n">the</span> <span class="n">avoidance</span> <span class="n">of</span> <span class="n">doubt</span><span class="p">,</span> <span class="n">where</span>
+      <span class="n">Exceptions</span> <span class="ow">and</span> <span class="n">Limitations</span> <span class="n">apply</span> <span class="n">to</span> <span class="n">Your</span> <span class="n">use</span><span class="p">,</span> <span class="n">this</span> <span class="n">Public</span>
+      <span class="n">License</span> <span class="n">does</span> <span class="ow">not</span> <span class="n">apply</span><span class="p">,</span> <span class="ow">and</span> <span class="n">You</span> <span class="n">do</span> <span class="ow">not</span> <span class="n">need</span> <span class="n">to</span> <span class="n">comply</span> <span class="k">with</span>
+      <span class="n">its</span> <span class="n">terms</span> <span class="ow">and</span> <span class="n">conditions</span><span class="o">.</span>
+
+   <span class="mf">3.</span> <span class="n">Term</span><span class="o">.</span> <span class="n">The</span> <span class="n">term</span> <span class="n">of</span> <span class="n">this</span> <span class="n">Public</span> <span class="n">License</span> <span class="ow">is</span> <span class="n">specified</span> <span class="ow">in</span> <span class="n">Section</span>
+      <span class="mi">6</span><span class="p">(</span><span class="n">a</span><span class="p">)</span><span class="o">.</span>
+
+   <span class="mf">4.</span> <span class="n">Media</span> <span class="ow">and</span> <span class="n">formats</span><span class="p">;</span> <span class="n">technical</span> <span class="n">modifications</span> <span class="n">allowed</span><span class="o">.</span> <span class="n">The</span>
+      <span class="n">Licensor</span> <span class="n">authorizes</span> <span class="n">You</span> <span class="n">to</span> <span class="n">exercise</span> <span class="n">the</span> <span class="n">Licensed</span> <span class="n">Rights</span> <span class="ow">in</span>
+      <span class="nb">all</span> <span class="n">media</span> <span class="ow">and</span> <span class="n">formats</span> <span class="n">whether</span> <span class="n">now</span> <span class="n">known</span> <span class="ow">or</span> <span class="n">hereafter</span> <span class="n">created</span><span class="p">,</span>
+      <span class="ow">and</span> <span class="n">to</span> <span class="n">make</span> <span class="n">technical</span> <span class="n">modifications</span> <span class="n">necessary</span> <span class="n">to</span> <span class="n">do</span> <span class="n">so</span><span class="o">.</span> <span class="n">The</span>
+      <span class="n">Licensor</span> <span class="n">waives</span> <span class="ow">and</span><span class="o">/</span><span class="ow">or</span> <span class="n">agrees</span> <span class="ow">not</span> <span class="n">to</span> <span class="k">assert</span> <span class="nb">any</span> <span class="n">right</span> <span class="ow">or</span>
+      <span class="n">authority</span> <span class="n">to</span> <span class="n">forbid</span> <span class="n">You</span> <span class="kn">from</span> <span class="nn">making</span> <span class="n">technical</span> <span class="n">modifications</span>
+      <span class="n">necessary</span> <span class="n">to</span> <span class="n">exercise</span> <span class="n">the</span> <span class="n">Licensed</span> <span class="n">Rights</span><span class="p">,</span> <span class="n">including</span>
+      <span class="n">technical</span> <span class="n">modifications</span> <span class="n">necessary</span> <span class="n">to</span> <span class="n">circumvent</span> <span class="n">Effective</span>
+      <span class="n">Technological</span> <span class="n">Measures</span><span class="o">.</span> <span class="n">For</span> <span class="n">purposes</span> <span class="n">of</span> <span class="n">this</span> <span class="n">Public</span> <span class="n">License</span><span class="p">,</span>
+      <span class="n">simply</span> <span class="n">making</span> <span class="n">modifications</span> <span class="n">authorized</span> <span class="n">by</span> <span class="n">this</span> <span class="n">Section</span> <span class="mi">2</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+      <span class="p">(</span><span class="mi">4</span><span class="p">)</span> <span class="n">never</span> <span class="n">produces</span> <span class="n">Adapted</span> <span class="n">Material</span><span class="o">.</span>
+
+   <span class="mf">5.</span> <span class="n">Downstream</span> <span class="n">recipients</span><span class="o">.</span>
+
+        <span class="n">a</span><span class="o">.</span> <span class="n">Offer</span> <span class="kn">from</span> <span class="nn">the</span> <span class="n">Licensor</span> <span class="o">--</span> <span class="n">Licensed</span> <span class="n">Material</span><span class="o">.</span> <span class="n">Every</span>
+           <span class="n">recipient</span> <span class="n">of</span> <span class="n">the</span> <span class="n">Licensed</span> <span class="n">Material</span> <span class="n">automatically</span>
+           <span class="n">receives</span> <span class="n">an</span> <span class="n">offer</span> <span class="kn">from</span> <span class="nn">the</span> <span class="n">Licensor</span> <span class="n">to</span> <span class="n">exercise</span> <span class="n">the</span>
+           <span class="n">Licensed</span> <span class="n">Rights</span> <span class="n">under</span> <span class="n">the</span> <span class="n">terms</span> <span class="ow">and</span> <span class="n">conditions</span> <span class="n">of</span> <span class="n">this</span>
+           <span class="n">Public</span> <span class="n">License</span><span class="o">.</span>
+
+        <span class="n">b</span><span class="o">.</span> <span class="n">Additional</span> <span class="n">offer</span> <span class="kn">from</span> <span class="nn">the</span> <span class="n">Licensor</span> <span class="o">--</span> <span class="n">Adapted</span> <span class="n">Material</span><span class="o">.</span>
+           <span class="n">Every</span> <span class="n">recipient</span> <span class="n">of</span> <span class="n">Adapted</span> <span class="n">Material</span> <span class="kn">from</span> <span class="nn">You</span>
+           <span class="n">automatically</span> <span class="n">receives</span> <span class="n">an</span> <span class="n">offer</span> <span class="kn">from</span> <span class="nn">the</span> <span class="n">Licensor</span> <span class="n">to</span>
+           <span class="n">exercise</span> <span class="n">the</span> <span class="n">Licensed</span> <span class="n">Rights</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">Adapted</span> <span class="n">Material</span>
+           <span class="n">under</span> <span class="n">the</span> <span class="n">conditions</span> <span class="n">of</span> <span class="n">the</span> <span class="n">Adapter</span><span class="s1">&#39;s License You apply.</span>
+
+        <span class="n">c</span><span class="o">.</span> <span class="n">No</span> <span class="n">downstream</span> <span class="n">restrictions</span><span class="o">.</span> <span class="n">You</span> <span class="n">may</span> <span class="ow">not</span> <span class="n">offer</span> <span class="ow">or</span> <span class="n">impose</span>
+           <span class="nb">any</span> <span class="n">additional</span> <span class="ow">or</span> <span class="n">different</span> <span class="n">terms</span> <span class="ow">or</span> <span class="n">conditions</span> <span class="n">on</span><span class="p">,</span> <span class="ow">or</span>
+           <span class="n">apply</span> <span class="nb">any</span> <span class="n">Effective</span> <span class="n">Technological</span> <span class="n">Measures</span> <span class="n">to</span><span class="p">,</span> <span class="n">the</span>
+           <span class="n">Licensed</span> <span class="n">Material</span> <span class="k">if</span> <span class="n">doing</span> <span class="n">so</span> <span class="n">restricts</span> <span class="n">exercise</span> <span class="n">of</span> <span class="n">the</span>
+           <span class="n">Licensed</span> <span class="n">Rights</span> <span class="n">by</span> <span class="nb">any</span> <span class="n">recipient</span> <span class="n">of</span> <span class="n">the</span> <span class="n">Licensed</span>
+           <span class="n">Material</span><span class="o">.</span>
+
+   <span class="mf">6.</span> <span class="n">No</span> <span class="n">endorsement</span><span class="o">.</span> <span class="n">Nothing</span> <span class="ow">in</span> <span class="n">this</span> <span class="n">Public</span> <span class="n">License</span> <span class="n">constitutes</span> <span class="ow">or</span>
+      <span class="n">may</span> <span class="n">be</span> <span class="n">construed</span> <span class="k">as</span> <span class="n">permission</span> <span class="n">to</span> <span class="k">assert</span> <span class="ow">or</span> <span class="n">imply</span> <span class="n">that</span> <span class="n">You</span>
+      <span class="n">are</span><span class="p">,</span> <span class="ow">or</span> <span class="n">that</span> <span class="n">Your</span> <span class="n">use</span> <span class="n">of</span> <span class="n">the</span> <span class="n">Licensed</span> <span class="n">Material</span> <span class="ow">is</span><span class="p">,</span> <span class="n">connected</span>
+      <span class="k">with</span><span class="p">,</span> <span class="ow">or</span> <span class="n">sponsored</span><span class="p">,</span> <span class="n">endorsed</span><span class="p">,</span> <span class="ow">or</span> <span class="n">granted</span> <span class="n">official</span> <span class="n">status</span> <span class="n">by</span><span class="p">,</span>
+      <span class="n">the</span> <span class="n">Licensor</span> <span class="ow">or</span> <span class="n">others</span> <span class="n">designated</span> <span class="n">to</span> <span class="n">receive</span> <span class="n">attribution</span> <span class="k">as</span>
+      <span class="n">provided</span> <span class="ow">in</span> <span class="n">Section</span> <span class="mi">3</span><span class="p">(</span><span class="n">a</span><span class="p">)(</span><span class="mi">1</span><span class="p">)(</span><span class="n">A</span><span class="p">)(</span><span class="n">i</span><span class="p">)</span><span class="o">.</span>
+</pre></div>
+</div>
+<p>b. Other rights.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>   <span class="mf">1.</span> <span class="n">Moral</span> <span class="n">rights</span><span class="p">,</span> <span class="n">such</span> <span class="k">as</span> <span class="n">the</span> <span class="n">right</span> <span class="n">of</span> <span class="n">integrity</span><span class="p">,</span> <span class="n">are</span> <span class="ow">not</span>
+      <span class="n">licensed</span> <span class="n">under</span> <span class="n">this</span> <span class="n">Public</span> <span class="n">License</span><span class="p">,</span> <span class="n">nor</span> <span class="n">are</span> <span class="n">publicity</span><span class="p">,</span>
+      <span class="n">privacy</span><span class="p">,</span> <span class="ow">and</span><span class="o">/</span><span class="ow">or</span> <span class="n">other</span> <span class="n">similar</span> <span class="n">personality</span> <span class="n">rights</span><span class="p">;</span> <span class="n">however</span><span class="p">,</span> <span class="n">to</span>
+      <span class="n">the</span> <span class="n">extent</span> <span class="n">possible</span><span class="p">,</span> <span class="n">the</span> <span class="n">Licensor</span> <span class="n">waives</span> <span class="ow">and</span><span class="o">/</span><span class="ow">or</span> <span class="n">agrees</span> <span class="ow">not</span> <span class="n">to</span>
+      <span class="k">assert</span> <span class="nb">any</span> <span class="n">such</span> <span class="n">rights</span> <span class="n">held</span> <span class="n">by</span> <span class="n">the</span> <span class="n">Licensor</span> <span class="n">to</span> <span class="n">the</span> <span class="n">limited</span>
+      <span class="n">extent</span> <span class="n">necessary</span> <span class="n">to</span> <span class="n">allow</span> <span class="n">You</span> <span class="n">to</span> <span class="n">exercise</span> <span class="n">the</span> <span class="n">Licensed</span>
+      <span class="n">Rights</span><span class="p">,</span> <span class="n">but</span> <span class="ow">not</span> <span class="n">otherwise</span><span class="o">.</span>
+
+   <span class="mf">2.</span> <span class="n">Patent</span> <span class="ow">and</span> <span class="n">trademark</span> <span class="n">rights</span> <span class="n">are</span> <span class="ow">not</span> <span class="n">licensed</span> <span class="n">under</span> <span class="n">this</span>
+      <span class="n">Public</span> <span class="n">License</span><span class="o">.</span>
+
+   <span class="mf">3.</span> <span class="n">To</span> <span class="n">the</span> <span class="n">extent</span> <span class="n">possible</span><span class="p">,</span> <span class="n">the</span> <span class="n">Licensor</span> <span class="n">waives</span> <span class="nb">any</span> <span class="n">right</span> <span class="n">to</span>
+      <span class="n">collect</span> <span class="n">royalties</span> <span class="kn">from</span> <span class="nn">You</span> <span class="k">for</span> <span class="n">the</span> <span class="n">exercise</span> <span class="n">of</span> <span class="n">the</span> <span class="n">Licensed</span>
+      <span class="n">Rights</span><span class="p">,</span> <span class="n">whether</span> <span class="n">directly</span> <span class="ow">or</span> <span class="n">through</span> <span class="n">a</span> <span class="n">collecting</span> <span class="n">society</span>
+      <span class="n">under</span> <span class="nb">any</span> <span class="n">voluntary</span> <span class="ow">or</span> <span class="n">waivable</span> <span class="n">statutory</span> <span class="ow">or</span> <span class="n">compulsory</span>
+      <span class="n">licensing</span> <span class="n">scheme</span><span class="o">.</span> <span class="n">In</span> <span class="nb">all</span> <span class="n">other</span> <span class="n">cases</span> <span class="n">the</span> <span class="n">Licensor</span> <span class="n">expressly</span>
+      <span class="n">reserves</span> <span class="nb">any</span> <span class="n">right</span> <span class="n">to</span> <span class="n">collect</span> <span class="n">such</span> <span class="n">royalties</span><span class="o">.</span>
+</pre></div>
+</div>
+<p>Section 3 – License Conditions.</p>
+<p>Your exercise of the Licensed Rights is expressly made subject to the
+following conditions.</p>
+<p>a. Attribution.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>   <span class="mf">1.</span> <span class="n">If</span> <span class="n">You</span> <span class="n">Share</span> <span class="n">the</span> <span class="n">Licensed</span> <span class="n">Material</span> <span class="p">(</span><span class="n">including</span> <span class="ow">in</span> <span class="n">modified</span>
+      <span class="n">form</span><span class="p">),</span> <span class="n">You</span> <span class="n">must</span><span class="p">:</span>
+
+        <span class="n">a</span><span class="o">.</span> <span class="n">retain</span> <span class="n">the</span> <span class="n">following</span> <span class="k">if</span> <span class="n">it</span> <span class="ow">is</span> <span class="n">supplied</span> <span class="n">by</span> <span class="n">the</span> <span class="n">Licensor</span>
+           <span class="k">with</span> <span class="n">the</span> <span class="n">Licensed</span> <span class="n">Material</span><span class="p">:</span>
+
+             <span class="n">i</span><span class="o">.</span> <span class="n">identification</span> <span class="n">of</span> <span class="n">the</span> <span class="n">creator</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="n">of</span> <span class="n">the</span> <span class="n">Licensed</span>
+                <span class="n">Material</span> <span class="ow">and</span> <span class="nb">any</span> <span class="n">others</span> <span class="n">designated</span> <span class="n">to</span> <span class="n">receive</span>
+                <span class="n">attribution</span><span class="p">,</span> <span class="ow">in</span> <span class="nb">any</span> <span class="n">reasonable</span> <span class="n">manner</span> <span class="n">requested</span> <span class="n">by</span>
+                <span class="n">the</span> <span class="n">Licensor</span> <span class="p">(</span><span class="n">including</span> <span class="n">by</span> <span class="n">pseudonym</span> <span class="k">if</span>
+                <span class="n">designated</span><span class="p">);</span>
+
+            <span class="n">ii</span><span class="o">.</span> <span class="n">a</span> <span class="n">copyright</span> <span class="n">notice</span><span class="p">;</span>
+
+           <span class="n">iii</span><span class="o">.</span> <span class="n">a</span> <span class="n">notice</span> <span class="n">that</span> <span class="n">refers</span> <span class="n">to</span> <span class="n">this</span> <span class="n">Public</span> <span class="n">License</span><span class="p">;</span>
+
+            <span class="n">iv</span><span class="o">.</span> <span class="n">a</span> <span class="n">notice</span> <span class="n">that</span> <span class="n">refers</span> <span class="n">to</span> <span class="n">the</span> <span class="n">disclaimer</span> <span class="n">of</span>
+                <span class="n">warranties</span><span class="p">;</span>
+
+             <span class="n">v</span><span class="o">.</span> <span class="n">a</span> <span class="n">URI</span> <span class="ow">or</span> <span class="n">hyperlink</span> <span class="n">to</span> <span class="n">the</span> <span class="n">Licensed</span> <span class="n">Material</span> <span class="n">to</span> <span class="n">the</span>
+                <span class="n">extent</span> <span class="n">reasonably</span> <span class="n">practicable</span><span class="p">;</span>
+
+        <span class="n">b</span><span class="o">.</span> <span class="n">indicate</span> <span class="k">if</span> <span class="n">You</span> <span class="n">modified</span> <span class="n">the</span> <span class="n">Licensed</span> <span class="n">Material</span> <span class="ow">and</span>
+           <span class="n">retain</span> <span class="n">an</span> <span class="n">indication</span> <span class="n">of</span> <span class="nb">any</span> <span class="n">previous</span> <span class="n">modifications</span><span class="p">;</span> <span class="ow">and</span>
+
+        <span class="n">c</span><span class="o">.</span> <span class="n">indicate</span> <span class="n">the</span> <span class="n">Licensed</span> <span class="n">Material</span> <span class="ow">is</span> <span class="n">licensed</span> <span class="n">under</span> <span class="n">this</span>
+           <span class="n">Public</span> <span class="n">License</span><span class="p">,</span> <span class="ow">and</span> <span class="n">include</span> <span class="n">the</span> <span class="n">text</span> <span class="n">of</span><span class="p">,</span> <span class="ow">or</span> <span class="n">the</span> <span class="n">URI</span> <span class="ow">or</span>
+           <span class="n">hyperlink</span> <span class="n">to</span><span class="p">,</span> <span class="n">this</span> <span class="n">Public</span> <span class="n">License</span><span class="o">.</span>
+
+   <span class="mf">2.</span> <span class="n">You</span> <span class="n">may</span> <span class="n">satisfy</span> <span class="n">the</span> <span class="n">conditions</span> <span class="ow">in</span> <span class="n">Section</span> <span class="mi">3</span><span class="p">(</span><span class="n">a</span><span class="p">)(</span><span class="mi">1</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">any</span>
+      <span class="n">reasonable</span> <span class="n">manner</span> <span class="n">based</span> <span class="n">on</span> <span class="n">the</span> <span class="n">medium</span><span class="p">,</span> <span class="n">means</span><span class="p">,</span> <span class="ow">and</span> <span class="n">context</span> <span class="ow">in</span>
+      <span class="n">which</span> <span class="n">You</span> <span class="n">Share</span> <span class="n">the</span> <span class="n">Licensed</span> <span class="n">Material</span><span class="o">.</span> <span class="n">For</span> <span class="n">example</span><span class="p">,</span> <span class="n">it</span> <span class="n">may</span> <span class="n">be</span>
+      <span class="n">reasonable</span> <span class="n">to</span> <span class="n">satisfy</span> <span class="n">the</span> <span class="n">conditions</span> <span class="n">by</span> <span class="n">providing</span> <span class="n">a</span> <span class="n">URI</span> <span class="ow">or</span>
+      <span class="n">hyperlink</span> <span class="n">to</span> <span class="n">a</span> <span class="n">resource</span> <span class="n">that</span> <span class="n">includes</span> <span class="n">the</span> <span class="n">required</span>
+      <span class="n">information</span><span class="o">.</span>
+
+   <span class="mf">3.</span> <span class="n">If</span> <span class="n">requested</span> <span class="n">by</span> <span class="n">the</span> <span class="n">Licensor</span><span class="p">,</span> <span class="n">You</span> <span class="n">must</span> <span class="n">remove</span> <span class="nb">any</span> <span class="n">of</span> <span class="n">the</span>
+      <span class="n">information</span> <span class="n">required</span> <span class="n">by</span> <span class="n">Section</span> <span class="mi">3</span><span class="p">(</span><span class="n">a</span><span class="p">)(</span><span class="mi">1</span><span class="p">)(</span><span class="n">A</span><span class="p">)</span> <span class="n">to</span> <span class="n">the</span> <span class="n">extent</span>
+      <span class="n">reasonably</span> <span class="n">practicable</span><span class="o">.</span>
+</pre></div>
+</div>
+<p>b. ShareAlike.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span> <span class="n">In</span> <span class="n">addition</span> <span class="n">to</span> <span class="n">the</span> <span class="n">conditions</span> <span class="ow">in</span> <span class="n">Section</span> <span class="mi">3</span><span class="p">(</span><span class="n">a</span><span class="p">),</span> <span class="k">if</span> <span class="n">You</span> <span class="n">Share</span>
+ <span class="n">Adapted</span> <span class="n">Material</span> <span class="n">You</span> <span class="n">produce</span><span class="p">,</span> <span class="n">the</span> <span class="n">following</span> <span class="n">conditions</span> <span class="n">also</span> <span class="n">apply</span><span class="o">.</span>
+
+   <span class="mf">1.</span> <span class="n">The</span> <span class="n">Adapter</span><span class="s1">&#39;s License You apply must be a Creative Commons</span>
+      <span class="n">license</span> <span class="k">with</span> <span class="n">the</span> <span class="n">same</span> <span class="n">License</span> <span class="n">Elements</span><span class="p">,</span> <span class="n">this</span> <span class="n">version</span> <span class="ow">or</span>
+      <span class="n">later</span><span class="p">,</span> <span class="ow">or</span> <span class="n">a</span> <span class="n">BY</span><span class="o">-</span><span class="n">SA</span> <span class="n">Compatible</span> <span class="n">License</span><span class="o">.</span>
+
+   <span class="mf">2.</span> <span class="n">You</span> <span class="n">must</span> <span class="n">include</span> <span class="n">the</span> <span class="n">text</span> <span class="n">of</span><span class="p">,</span> <span class="ow">or</span> <span class="n">the</span> <span class="n">URI</span> <span class="ow">or</span> <span class="n">hyperlink</span> <span class="n">to</span><span class="p">,</span> <span class="n">the</span>
+      <span class="n">Adapter</span><span class="s1">&#39;s License You apply. You may satisfy this condition</span>
+      <span class="ow">in</span> <span class="nb">any</span> <span class="n">reasonable</span> <span class="n">manner</span> <span class="n">based</span> <span class="n">on</span> <span class="n">the</span> <span class="n">medium</span><span class="p">,</span> <span class="n">means</span><span class="p">,</span> <span class="ow">and</span>
+      <span class="n">context</span> <span class="ow">in</span> <span class="n">which</span> <span class="n">You</span> <span class="n">Share</span> <span class="n">Adapted</span> <span class="n">Material</span><span class="o">.</span>
+
+   <span class="mf">3.</span> <span class="n">You</span> <span class="n">may</span> <span class="ow">not</span> <span class="n">offer</span> <span class="ow">or</span> <span class="n">impose</span> <span class="nb">any</span> <span class="n">additional</span> <span class="ow">or</span> <span class="n">different</span> <span class="n">terms</span>
+      <span class="ow">or</span> <span class="n">conditions</span> <span class="n">on</span><span class="p">,</span> <span class="ow">or</span> <span class="n">apply</span> <span class="nb">any</span> <span class="n">Effective</span> <span class="n">Technological</span>
+      <span class="n">Measures</span> <span class="n">to</span><span class="p">,</span> <span class="n">Adapted</span> <span class="n">Material</span> <span class="n">that</span> <span class="n">restrict</span> <span class="n">exercise</span> <span class="n">of</span> <span class="n">the</span>
+      <span class="n">rights</span> <span class="n">granted</span> <span class="n">under</span> <span class="n">the</span> <span class="n">Adapter</span><span class="s1">&#39;s License You apply.</span>
+</pre></div>
+</div>
+<p>Section 4 – Sui Generis Database Rights.</p>
+<p>Where the Licensed Rights include Sui Generis Database Rights that
+apply to Your use of the Licensed Material:</p>
+<p>a. for the avoidance of doubt, Section 2(a)(1) grants You the right
+to extract, reuse, reproduce, and Share all or a substantial
+portion of the contents of the database;</p>
+<p>b. if You include all or a substantial portion of the database
+contents in a database in which You have Sui Generis Database
+Rights, then the database in which You have Sui Generis Database
+Rights (but not its individual contents) is Adapted Material,</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span> <span class="n">including</span> <span class="k">for</span> <span class="n">purposes</span> <span class="n">of</span> <span class="n">Section</span> <span class="mi">3</span><span class="p">(</span><span class="n">b</span><span class="p">);</span> <span class="ow">and</span>
+</pre></div>
+</div>
+<p>c. You must comply with the conditions in Section 3(a) if You Share
+all or a substantial portion of the contents of the database.</p>
+<p>For the avoidance of doubt, this Section 4 supplements and does not
+replace Your obligations under this Public License where the Licensed
+Rights include other Copyright and Similar Rights.</p>
+<p>Section 5 – Disclaimer of Warranties and Limitation of Liability.</p>
+<p>a. UNLESS OTHERWISE SEPARATELY UNDERTAKEN BY THE LICENSOR, TO THE
+EXTENT POSSIBLE, THE LICENSOR OFFERS THE LICENSED MATERIAL AS-IS
+AND AS-AVAILABLE, AND MAKES NO REPRESENTATIONS OR WARRANTIES OF
+ANY KIND CONCERNING THE LICENSED MATERIAL, WHETHER EXPRESS,
+IMPLIED, STATUTORY, OR OTHER. THIS INCLUDES, WITHOUT LIMITATION,
+WARRANTIES OF TITLE, MERCHANTABILITY, FITNESS FOR A PARTICULAR
+PURPOSE, NON-INFRINGEMENT, ABSENCE OF LATENT OR OTHER DEFECTS,
+ACCURACY, OR THE PRESENCE OR ABSENCE OF ERRORS, WHETHER OR NOT
+KNOWN OR DISCOVERABLE. WHERE DISCLAIMERS OF WARRANTIES ARE NOT
+ALLOWED IN FULL OR IN PART, THIS DISCLAIMER MAY NOT APPLY TO YOU.</p>
+<p>b. TO THE EXTENT POSSIBLE, IN NO EVENT WILL THE LICENSOR BE LIABLE
+TO YOU ON ANY LEGAL THEORY (INCLUDING, WITHOUT LIMITATION,
+NEGLIGENCE) OR OTHERWISE FOR ANY DIRECT, SPECIAL, INDIRECT,
+INCIDENTAL, CONSEQUENTIAL, PUNITIVE, EXEMPLARY, OR OTHER LOSSES,
+COSTS, EXPENSES, OR DAMAGES ARISING OUT OF THIS PUBLIC LICENSE OR
+USE OF THE LICENSED MATERIAL, EVEN IF THE LICENSOR HAS BEEN
+ADVISED OF THE POSSIBILITY OF SUCH LOSSES, COSTS, EXPENSES, OR
+DAMAGES. WHERE A LIMITATION OF LIABILITY IS NOT ALLOWED IN FULL OR
+IN PART, THIS LIMITATION MAY NOT APPLY TO YOU.</p>
+<p>c. The disclaimer of warranties and limitation of liability provided
+above shall be interpreted in a manner that, to the extent
+possible, most closely approximates an absolute disclaimer and
+waiver of all liability.</p>
+<p>Section 6 – Term and Termination.</p>
+<p>a. This Public License applies for the term of the Copyright and
+Similar Rights licensed here. However, if You fail to comply with
+this Public License, then Your rights under this Public License
+terminate automatically.</p>
+<p>b. Where Your right to use the Licensed Material has terminated under
+Section 6(a), it reinstates:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>   <span class="mf">1.</span> <span class="n">automatically</span> <span class="k">as</span> <span class="n">of</span> <span class="n">the</span> <span class="n">date</span> <span class="n">the</span> <span class="n">violation</span> <span class="ow">is</span> <span class="n">cured</span><span class="p">,</span> <span class="n">provided</span>
+      <span class="n">it</span> <span class="ow">is</span> <span class="n">cured</span> <span class="n">within</span> <span class="mi">30</span> <span class="n">days</span> <span class="n">of</span> <span class="n">Your</span> <span class="n">discovery</span> <span class="n">of</span> <span class="n">the</span>
+      <span class="n">violation</span><span class="p">;</span> <span class="ow">or</span>
+
+   <span class="mf">2.</span> <span class="n">upon</span> <span class="n">express</span> <span class="n">reinstatement</span> <span class="n">by</span> <span class="n">the</span> <span class="n">Licensor</span><span class="o">.</span>
+
+ <span class="n">For</span> <span class="n">the</span> <span class="n">avoidance</span> <span class="n">of</span> <span class="n">doubt</span><span class="p">,</span> <span class="n">this</span> <span class="n">Section</span> <span class="mi">6</span><span class="p">(</span><span class="n">b</span><span class="p">)</span> <span class="n">does</span> <span class="ow">not</span> <span class="n">affect</span> <span class="nb">any</span>
+ <span class="n">right</span> <span class="n">the</span> <span class="n">Licensor</span> <span class="n">may</span> <span class="n">have</span> <span class="n">to</span> <span class="n">seek</span> <span class="n">remedies</span> <span class="k">for</span> <span class="n">Your</span> <span class="n">violations</span>
+ <span class="n">of</span> <span class="n">this</span> <span class="n">Public</span> <span class="n">License</span><span class="o">.</span>
+</pre></div>
+</div>
+<p>c. For the avoidance of doubt, the Licensor may also offer the
+Licensed Material under separate terms or conditions or stop
+distributing the Licensed Material at any time; however, doing so
+will not terminate this Public License.</p>
+<p>d. Sections 1, 5, 6, 7, and 8 survive termination of this Public
+License.</p>
+<p>Section 7 – Other Terms and Conditions.</p>
+<p>a. The Licensor shall not be bound by any additional or different
+terms or conditions communicated by You unless expressly agreed.</p>
+<p>b. Any arrangements, understandings, or agreements regarding the
+Licensed Material not stated herein are separate from and
+independent of the terms and conditions of this Public License.</p>
+<p>Section 8 – Interpretation.</p>
+<p>a. For the avoidance of doubt, this Public License does not, and
+shall not be interpreted to, reduce, limit, restrict, or impose
+conditions on any use of the Licensed Material that could lawfully
+be made without permission under this Public License.</p>
+<p>b. To the extent possible, if any provision of this Public License is
+deemed unenforceable, it shall be automatically reformed to the
+minimum extent necessary to make it enforceable. If the provision
+cannot be reformed, it shall be severed from this Public License
+without affecting the enforceability of the remaining terms and
+conditions.</p>
+<p>c. No term or condition of this Public License will be waived and no
+failure to comply consented to unless expressly agreed to by the
+Licensor.</p>
+<p>d. Nothing in this Public License constitutes or may be interpreted
+as a limitation upon, or waiver of, any privileges and immunities
+that apply to the Licensor or You, including from the legal
+processes of any jurisdiction or authority.</p>
+<p>=======================================================================</p>
+<p>Creative Commons is not a party to its public
+licenses. Notwithstanding, Creative Commons may elect to apply one of
+its public licenses to material it publishes and in those instances
+will be considered the “Licensor.” The text of the Creative Commons
+public licenses is dedicated to the public domain under the CC0 Public
+Domain Dedication. Except for the limited purpose of indicating that
+material is shared under a Creative Commons public license or as
+otherwise permitted by the Creative Commons policies published at
+creativecommons.org/policies, Creative Commons does not authorize the
+use of the trademark “Creative Commons” or any other trademark or logo
+of Creative Commons without its prior written consent including,
+without limitation, in connection with any unauthorized modifications
+to any of its public licenses or any other arrangements,
+understandings, or agreements concerning use of licensed material. For
+the avoidance of doubt, this paragraph does not form part of the
+public licenses.</p>
+<p>Creative Commons may be contacted at creativecommons.org.</p>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2002-2020, Tristan Gingold and contributors
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/buildthedocs/sphinx.theme">theme</a>
+    
+    provided by <a href="https://buildthedocs.github.io">Build the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,1646 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Index &mdash; GHDL 1.0-dev documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="_static/icon.png"/>
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="author" title="About these documents" href="about.html" />
+    <link rel="index" title="Index" href="#" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0-dev
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="about.html">About GHDL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="licenses.html">Copyrights | Licenses</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting GHDL</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="getting/Releases.html">Releases and sources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting/index.html">Building GHDL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting/PrecompileVendorPrimitives.html">Precompile Vendor Primitives</a></li>
+</ul>
+<p class="caption"><span class="caption-text">GHDL usage</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="quick_start/README.html">Quick Start Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="using/InvokingGHDL.html">Invoking GHDL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="using/Simulation.html">Simulation (runtime)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="using/Synthesis.html">Synthesis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="using/CommandReference.html">Additional Command Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="using/Foreign.html">Co-simulation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="using/ImplementationOfVHDL.html">Implementation of VHDL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="using/ImplementationOfVITAL.html">Implementation of VITAL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="using/pyGHDL/index.html">Python Interface</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Development</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="development/Debugging.html">Debugging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="development/CodingStyle.html">Coding Style</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Internals</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="internals/Overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="internals/Frontend.html">Front-end</a></li>
+<li class="toctree-l1"><a class="reference internal" href="internals/AST.html">AST</a></li>
+<li class="toctree-l1"><a class="reference internal" href="internals/RTI.html">Run Time Information (RTI)</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Index</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Index</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">GHDL</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Index</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            
+              <a href="https://github.com/antonblanchard/ghdl/blob/master/doc/genindex" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+
+<h1 id="index">Index</h1>
+
+<div class="genindex-jumpbox">
+ <a href="#Symbols"><strong>Symbols</strong></a>
+ | <a href="#C"><strong>C</strong></a>
+ | <a href="#D"><strong>D</strong></a>
+ | <a href="#E"><strong>E</strong></a>
+ | <a href="#G"><strong>G</strong></a>
+ | <a href="#I"><strong>I</strong></a>
+ | <a href="#M"><strong>M</strong></a>
+ | <a href="#S"><strong>S</strong></a>
+ | <a href="#V"><strong>V</strong></a>
+ | <a href="#W"><strong>W</strong></a>
+ 
+</div>
+<h2 id="Symbols">Symbols</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li>
+    --activity=&lt;LEVEL&gt;
+
+      <ul>
+        <li><a href="development/Debugging.html#cmdoption-activity">command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --AS&lt;=COMMAND&gt;
+
+      <ul>
+        <li><a href="using/CommandReference.html#cmdoption-ghdl-AS">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --assert-assumes
+
+      <ul>
+        <li><a href="using/Synthesis.html#cmdoption-ghdl-assert-assumes">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --assert-level=&lt;LEVEL&gt;
+
+      <ul>
+        <li><a href="using/Simulation.html#cmdoption-ghdl-assert-level">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --asserts=&lt;POLICY&gt;
+
+      <ul>
+        <li><a href="using/Simulation.html#cmdoption-ghdl-asserts">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --assume-asserts
+
+      <ul>
+        <li><a href="using/Synthesis.html#cmdoption-ghdl-assume-asserts">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --backtrace-severity=&lt;LEVEL&gt;
+
+      <ul>
+        <li><a href="using/Simulation.html#cmdoption-ghdl-backtrace-severity">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --bind &lt;[options] primary_unit [secondary_unit]&gt;
+
+      <ul>
+        <li><a href="using/CommandReference.html#cmdoption-ghdl-bind">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --bootstrap
+
+      <ul>
+        <li><a href="development/Debugging.html#cmdoption-bootstrap">command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --checks
+
+      <ul>
+        <li><a href="development/Debugging.html#cmdoption-checks">command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --chop &lt;files...&gt;
+
+      <ul>
+        <li><a href="using/CommandReference.html#cmdoption-ghdl-chop">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --clean &lt;[options]&gt;
+
+      <ul>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-clean">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --copy &lt;--work=name [options]&gt;
+
+      <ul>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-copy">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --dir &lt;[options] [libs]&gt;
+
+      <ul>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-dir">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --disp-config &lt;[options]&gt;
+
+      <ul>
+        <li><a href="using/CommandReference.html#cmdoption-ghdl-disp-config">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --disp-order
+
+      <ul>
+        <li><a href="development/Debugging.html#cmdoption-disp-order">command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --disp-sig-types
+
+      <ul>
+        <li><a href="development/Debugging.html#cmdoption-disp-sig-types">command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --disp-signals-map
+
+      <ul>
+        <li><a href="development/Debugging.html#cmdoption-disp-signals-map">command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --disp-signals-table
+
+      <ul>
+        <li><a href="development/Debugging.html#cmdoption-disp-signals-table">command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --disp-sources
+
+      <ul>
+        <li><a href="development/Debugging.html#cmdoption-disp-sources">command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --disp-standard &lt;[options]&gt;
+
+      <ul>
+        <li><a href="using/CommandReference.html#cmdoption-ghdl-disp-standard">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --disp-time
+
+      <ul>
+        <li><a href="using/Simulation.html#cmdoption-ghdl-disp-time">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --disp-tree=&lt;KIND&gt;
+
+      <ul>
+        <li><a href="using/Simulation.html#cmdoption-ghdl-disp-tree">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --dump-rti
+
+      <ul>
+        <li><a href="development/Debugging.html#cmdoption-dump-rti">command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --elab-run &lt;[options...] primary_unit [secondary_unit] [simulation_options...]&gt;
+
+      <ul>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-elab-run">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --file-to-xml
+
+      <ul>
+        <li><a href="using/CommandReference.html#cmdoption-ghdl-file-to-xml">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --format=&lt;FORMAT&gt;
+
+      <ul>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-format">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --fst=&lt;FILENAME&gt;
+
+      <ul>
+        <li><a href="using/Simulation.html#cmdoption-ghdl-fst">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --gen-depends &lt;[options] primary [secondary]&gt;
+
+      <ul>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-gen-depends">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li><a href="using/InvokingGHDL.html#index-10">--gen-depends command</a>
+</li>
+      <li>
+    --gen-makefile &lt;[options] primary [secondary]&gt;
+
+      <ul>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-gen-makefile">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --GHDL1&lt;=COMMAND&gt;
+
+      <ul>
+        <li><a href="using/CommandReference.html#cmdoption-ghdl-GHDL1">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --help
+
+      <ul>
+        <li><a href="using/CommandReference.html#cmdoption-ghdl-help">ghdl command line option</a>, <a href="using/Simulation.html#cmdoption-ghdl-help">[1]</a>
+</li>
+      </ul></li>
+      <li>
+    --ieee-asserts=&lt;POLICY&gt;
+
+      <ul>
+        <li><a href="using/Simulation.html#cmdoption-ghdl-ieee-asserts">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --ieee=&lt;IEEE_VAR&gt;
+
+      <ul>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-ieee">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --lines &lt;files...&gt;
+
+      <ul>
+        <li><a href="using/CommandReference.html#cmdoption-ghdl-lines">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --link &lt;[options] primary_unit [secondary_unit]&gt;
+
+      <ul>
+        <li><a href="using/CommandReference.html#cmdoption-ghdl-link">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --LINK&lt;=COMMAND&gt;
+
+      <ul>
+        <li><a href="using/CommandReference.html#cmdoption-ghdl-LINK">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --list-link &lt;primary_unit [secondary_unit]&gt;
+
+      <ul>
+        <li><a href="using/CommandReference.html#cmdoption-ghdl-list-link">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --max-stack-alloc=&lt;N&gt;
+
+      <ul>
+        <li><a href="using/Simulation.html#cmdoption-ghdl-max-stack-alloc">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --mb-comments
+
+      <ul>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-mb-comments">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --no-assert-cover
+
+      <ul>
+        <li><a href="using/Synthesis.html#cmdoption-ghdl-no-assert-cover">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --no-formal
+
+      <ul>
+        <li><a href="using/Synthesis.html#cmdoption-ghdl-no-formal">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --no-run
+
+      <ul>
+        <li><a href="using/Simulation.html#cmdoption-ghdl-no-run">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --no-vital-checks
+
+      <ul>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-no-vital-checks">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --pp-html &lt;[options] file...&gt;
+
+      <ul>
+        <li><a href="using/CommandReference.html#cmdoption-ghdl-pp-html">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --PREFIX=&lt;PATH&gt;
+
+      <ul>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-PREFIX">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --psl-report=&lt;FILENAME&gt;
+
+      <ul>
+        <li><a href="using/Simulation.html#cmdoption-ghdl-psl-report">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --read-wave-opt=&lt;FILENAME&gt;
+
+      <ul>
+        <li><a href="using/Simulation.html#cmdoption-ghdl-read-wave-opt">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --remove &lt;[options]&gt;
+
+      <ul>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-remove">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --sdf=&lt;PATH=FILENAME&gt;
+
+      <ul>
+        <li><a href="using/Simulation.html#cmdoption-ghdl-sdf">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --stats
+
+      <ul>
+        <li><a href="development/Debugging.html#cmdoption-stats">command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --std=&lt;STANDARD&gt;
+
+      <ul>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-std">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --stop-delta=&lt;N&gt;
+
+      <ul>
+        <li><a href="using/Simulation.html#cmdoption-ghdl-stop-delta">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --stop-time=&lt;TIME&gt;
+
+      <ul>
+        <li><a href="using/Simulation.html#cmdoption-ghdl-stop-time">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --syn-binding
+
+      <ul>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-syn-binding">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --synth &lt;[options] files... -e primary_unit [secondary_unit]&gt;
+
+      <ul>
+        <li><a href="using/Synthesis.html#cmdoption-ghdl-0">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --synth &lt;[options] primary_unit [secondary_unit]&gt;
+
+      <ul>
+        <li><a href="using/Synthesis.html#cmdoption-ghdl-synth">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --time-resolution=&lt;UNIT&gt;
+
+      <ul>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-time-resolution">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --trace-processes
+
+      <ul>
+        <li><a href="development/Debugging.html#cmdoption-trace-processes">command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --trace-signals
+
+      <ul>
+        <li><a href="development/Debugging.html#cmdoption-trace-signals">command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --unbuffered
+
+      <ul>
+        <li><a href="using/Simulation.html#cmdoption-ghdl-unbuffered">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --vcd-nodate
+
+      <ul>
+        <li><a href="using/Simulation.html#cmdoption-ghdl-vcd-nodate">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --vcd=&lt;FILENAME&gt;
+
+      <ul>
+        <li><a href="using/Simulation.html#cmdoption-ghdl-vcd">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --vcdgz=&lt;FILENAME&gt;
+
+      <ul>
+        <li><a href="using/Simulation.html#cmdoption-ghdl-vcdgz">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --vendor-library=NAME
+
+      <ul>
+        <li><a href="using/Synthesis.html#cmdoption-ghdl-vendor-library">ghdl command line option</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li>
+    --version
+
+      <ul>
+        <li><a href="using/CommandReference.html#cmdoption-ghdl-version">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --vital-checks
+
+      <ul>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-vital-checks">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --vpi-cflags
+
+      <ul>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-vpi-cflags">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --vpi-compile &lt;command&gt;
+
+      <ul>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-vpi-compile">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --vpi-include-dir
+
+      <ul>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-vpi-include-dir">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --vpi-ldflags
+
+      <ul>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-vpi-ldflags">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --vpi-library-dir
+
+      <ul>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-vpi-library-dir">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --vpi-library-dir-unix
+
+      <ul>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-vpi-library-dir-unix">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --vpi-link &lt;command&gt;
+
+      <ul>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-vpi-link">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --vpi-trace=&lt;FILE&gt;
+
+      <ul>
+        <li><a href="using/Simulation.html#cmdoption-ghdl-vpi-trace">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --vpi=&lt;FILENAME&gt;
+
+      <ul>
+        <li><a href="using/Simulation.html#cmdoption-ghdl-vpi">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --warn-binding
+
+      <ul>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-warn-binding">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --warn-body
+
+      <ul>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-warn-body">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --warn-default-binding
+
+      <ul>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-warn-default-binding">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --warn-delayed-checks
+
+      <ul>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-warn-delayed-checks">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --warn-error
+
+      <ul>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-warn-error">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --warn-hide
+
+      <ul>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-warn-hide">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --warn-library
+
+      <ul>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-warn-library">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --warn-nested-comment
+
+      <ul>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-warn-nested-comment">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --warn-others
+
+      <ul>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-warn-others">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --warn-parenthesis
+
+      <ul>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-warn-parenthesis">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --warn-pure
+
+      <ul>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-warn-pure">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --warn-reserved
+
+      <ul>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-warn-reserved">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --warn-runtime-error
+
+      <ul>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-warn-runtime-error">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --warn-shared
+
+      <ul>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-warn-shared">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --warn-specs
+
+      <ul>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-warn-specs">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --warn-static
+
+      <ul>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-warn-static">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --warn-unused
+
+      <ul>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-warn-unused">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --warn-vital-generic
+
+      <ul>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-warn-vital-generic">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --wave=&lt;FILENAME&gt;
+
+      <ul>
+        <li><a href="using/Simulation.html#cmdoption-ghdl-wave">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --work=&lt;LIB_NAME&gt;
+
+      <ul>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-work">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --workdir=&lt;DIR&gt;
+
+      <ul>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-workdir">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --write-wave-opt=&lt;FILENAME&gt;
+
+      <ul>
+        <li><a href="using/Simulation.html#cmdoption-ghdl-write-wave-opt">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    --xref-html [options] files...
+
+      <ul>
+        <li><a href="using/Simulation.html#cmdoption-ghdl-xref-html">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    -a &lt;[options...] file...&gt;
+
+      <ul>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-a">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    -C
+
+      <ul>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-mb-comments">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    -c &lt;[options] file... -&lt;e|r&gt; primary_unit [secondary_unit]&gt;
+
+      <ul>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-c">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    -e &lt;[options...] primary_unit [secondary_unit]&gt;
+
+      <ul>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-e">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    -f &lt;file...&gt;
+
+      <ul>
+        <li><a href="using/CommandReference.html#cmdoption-ghdl-f">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    -fcaret-diagnostics
+
+      <ul>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-fcaret-diagnostics">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    -fcolor-diagnostics
+
+      <ul>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-fcolor-diagnostics">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    -fdiagnostics-show-option
+
+      <ul>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-fdiagnostics-show-option">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    -fexplicit
+
+      <ul>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-fexplicit">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    -fno-caret-diagnostics
+
+      <ul>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-fno-caret-diagnostics">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    -fno-color-diagnostics
+
+      <ul>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-fno-color-diagnostics">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    -fno-diagnostics-show-option
+
+      <ul>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-fno-diagnostics-show-option">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    -fpsl
+
+      <ul>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-fpsl">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    -frelaxed
+
+      <ul>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-frelaxed">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    -frelaxed-rules
+
+      <ul>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-frelaxed-rules">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    -fsynopsys
+
+      <ul>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-fsynopsys">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    -gGENERIC=VALUE
+
+      <ul>
+        <li><a href="using/Simulation.html#cmdoption-ghdl-gGENERIC">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    -gNAME=VALUE
+
+      <ul>
+        <li><a href="using/Synthesis.html#cmdoption-ghdl-gNAME">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    -h
+
+      <ul>
+        <li><a href="using/CommandReference.html#cmdoption-ghdl-help">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    -i &lt;[options] file...&gt;
+
+      <ul>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-i">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    -m &lt;[options] primary [secondary]&gt;
+
+      <ul>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-m">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    -o=&lt;FNAME&gt;
+
+      <ul>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-o">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    -P&lt;DIRECTORY&gt;
+
+      <ul>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-P-DIRECTORY">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    -r &lt;[options...] primary_unit [secondary_unit] [simulation_options...]&gt;
+
+      <ul>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-r">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    -s &lt;[options] files&gt;
+
+      <ul>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-s">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    -v
+
+      <ul>
+        <li><a href="using/CommandReference.html#cmdoption-ghdl-version">ghdl command line option</a>, <a href="using/InvokingGHDL.html#cmdoption-ghdl-v">[1]</a>
+</li>
+      </ul></li>
+      <li>
+    -Wa,&lt;OPTION&gt;
+
+      <ul>
+        <li><a href="using/CommandReference.html#cmdoption-ghdl-Wa-OPTION">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    -Wc,&lt;OPTION&gt;
+
+      <ul>
+        <li><a href="using/CommandReference.html#cmdoption-ghdl-Wc-OPTION">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li>
+    -Wl,&lt;OPTION&gt;
+
+      <ul>
+        <li><a href="using/CommandReference.html#cmdoption-ghdl-Wl-OPTION">ghdl command line option</a>
+</li>
+      </ul></li>
+      <li><a href="using/ImplementationOfVHDL.html#index-3">1076</a>
+</li>
+      <li><a href="using/InvokingGHDL.html#index-14">1076.3</a>
+</li>
+      <li><a href="using/ImplementationOfVITAL.html#index-2">1076.4</a>
+</li>
+      <li><a href="using/ImplementationOfVHDL.html#index-4">1076a</a>
+</li>
+      <li><a href="using/InvokingGHDL.html#index-12">1164</a>
+</li>
+      <li><a href="development/Debugging.html#index-0">`__ghdl_fatal`</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="C">C</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="using/InvokingGHDL.html#index-1">cmd analysis</a>
+</li>
+      <li><a href="using/InvokingGHDL.html#index-6">cmd analyze and elaborate</a>
+</li>
+      <li><a href="using/InvokingGHDL.html#index-5">cmd checking syntax</a>
+</li>
+      <li><a href="using/CommandReference.html#index-1">cmd display configuration</a>
+</li>
+      <li><a href="using/CommandReference.html#index-2">cmd display standard</a>
+</li>
+      <li><a href="using/InvokingGHDL.html#index-4">cmd elaborate and run</a>
+</li>
+      <li><a href="using/InvokingGHDL.html#index-2">cmd elaboration</a>
+</li>
+      <li><a href="using/CommandReference.html#index-8">cmd file chop</a>
+</li>
+      <li><a href="using/CommandReference.html#index-7">cmd file find</a>
+</li>
+      <li><a href="using/CommandReference.html#index-9">cmd file lines</a>
+</li>
+      <li><a href="using/CommandReference.html#index-5">cmd file pretty printing</a>
+</li>
+      <li><a href="using/CommandReference.html#index-11">cmd GCC/LLVM binding</a>
+</li>
+      <li><a href="using/CommandReference.html#index-12">cmd GCC/LLVM linking</a>
+</li>
+      <li><a href="using/CommandReference.html#index-13">cmd GCC/LLVM list link</a>
+</li>
+      <li><a href="using/InvokingGHDL.html#index-9">cmd generate makefile</a>
+</li>
+      <li><a href="using/CommandReference.html#index-0">cmd help</a>
+</li>
+      <li><a href="using/InvokingGHDL.html#index-7">cmd importing files</a>
+</li>
+      <li><a href="using/InvokingGHDL.html#index-20">cmd library clean</a>
+</li>
+      <li><a href="using/InvokingGHDL.html#index-22">cmd library copy</a>
+</li>
+      <li><a href="using/InvokingGHDL.html#index-19">cmd library directory</a>
+</li>
+      <li><a href="using/InvokingGHDL.html#index-21">cmd library remove</a>
+</li>
+      <li><a href="using/InvokingGHDL.html#index-8">cmd make</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="using/InvokingGHDL.html#index-3">cmd run</a>
+</li>
+      <li><a href="using/CommandReference.html#index-4">cmd version</a>
+</li>
+      <li><a href="using/InvokingGHDL.html#index-25">cmd VPI cflags</a>
+</li>
+      <li><a href="using/InvokingGHDL.html#index-23">cmd VPI compile</a>
+</li>
+      <li><a href="using/InvokingGHDL.html#index-27">cmd VPI include dir</a>
+</li>
+      <li><a href="using/InvokingGHDL.html#index-26">cmd VPI ldflags</a>
+</li>
+      <li><a href="using/InvokingGHDL.html#index-28">cmd VPI library dir</a>
+</li>
+      <li><a href="using/InvokingGHDL.html#index-24">cmd VPI link</a>
+</li>
+      <li><a href="using/CommandReference.html#index-10">cmd XML generation</a>
+</li>
+      <li>
+    command line option
+
+      <ul>
+        <li><a href="development/Debugging.html#cmdoption-activity">--activity=&lt;LEVEL&gt;</a>
+</li>
+        <li><a href="development/Debugging.html#cmdoption-bootstrap">--bootstrap</a>
+</li>
+        <li><a href="development/Debugging.html#cmdoption-checks">--checks</a>
+</li>
+        <li><a href="development/Debugging.html#cmdoption-disp-order">--disp-order</a>
+</li>
+        <li><a href="development/Debugging.html#cmdoption-disp-sig-types">--disp-sig-types</a>
+</li>
+        <li><a href="development/Debugging.html#cmdoption-disp-signals-map">--disp-signals-map</a>
+</li>
+        <li><a href="development/Debugging.html#cmdoption-disp-signals-table">--disp-signals-table</a>
+</li>
+        <li><a href="development/Debugging.html#cmdoption-disp-sources">--disp-sources</a>
+</li>
+        <li><a href="development/Debugging.html#cmdoption-dump-rti">--dump-rti</a>
+</li>
+        <li><a href="development/Debugging.html#cmdoption-stats">--stats</a>
+</li>
+        <li><a href="development/Debugging.html#cmdoption-trace-processes">--trace-processes</a>
+</li>
+        <li><a href="development/Debugging.html#cmdoption-trace-signals">--trace-signals</a>
+</li>
+      </ul></li>
+      <li><a href="using/InvokingGHDL.html#index-18">create your own library</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="D">D</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="using/CommandReference.html#index-3">display ``std.standard``</a>
+</li>
+      <li><a href="using/Simulation.html#index-4">display design hierarchy</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="using/Simulation.html#index-0">display time</a>
+</li>
+      <li><a href="using/Simulation.html#index-3">dump of signals</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="E">E</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li>
+    environment variable
+
+      <ul>
+        <li><a href="using/CommandReference.html#envvar-GHDL_PREFIX">GHDL_PREFIX</a>, <a href="using/InvokingGHDL.html#index-0">[1]</a>
+</li>
+      </ul></li>
+  </ul></td>
+</tr></table>
+
+<h2 id="G">G</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li>
+    ghdl command line option
+
+      <ul>
+        <li><a href="using/CommandReference.html#cmdoption-ghdl-AS">--AS&lt;=COMMAND&gt;</a>
+</li>
+        <li><a href="using/Synthesis.html#cmdoption-ghdl-assert-assumes">--assert-assumes</a>
+</li>
+        <li><a href="using/Simulation.html#cmdoption-ghdl-assert-level">--assert-level=&lt;LEVEL&gt;</a>
+</li>
+        <li><a href="using/Simulation.html#cmdoption-ghdl-asserts">--asserts=&lt;POLICY&gt;</a>
+</li>
+        <li><a href="using/Synthesis.html#cmdoption-ghdl-assume-asserts">--assume-asserts</a>
+</li>
+        <li><a href="using/Simulation.html#cmdoption-ghdl-backtrace-severity">--backtrace-severity=&lt;LEVEL&gt;</a>
+</li>
+        <li><a href="using/CommandReference.html#cmdoption-ghdl-bind">--bind &lt;[options] primary_unit [secondary_unit]&gt;</a>
+</li>
+        <li><a href="using/CommandReference.html#cmdoption-ghdl-chop">--chop &lt;files...&gt;</a>
+</li>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-clean">--clean &lt;[options]&gt;</a>
+</li>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-copy">--copy &lt;--work=name [options]&gt;</a>
+</li>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-dir">--dir &lt;[options] [libs]&gt;</a>
+</li>
+        <li><a href="using/CommandReference.html#cmdoption-ghdl-disp-config">--disp-config &lt;[options]&gt;</a>
+</li>
+        <li><a href="using/CommandReference.html#cmdoption-ghdl-disp-standard">--disp-standard &lt;[options]&gt;</a>
+</li>
+        <li><a href="using/Simulation.html#cmdoption-ghdl-disp-time">--disp-time</a>
+</li>
+        <li><a href="using/Simulation.html#cmdoption-ghdl-disp-tree">--disp-tree=&lt;KIND&gt;</a>
+</li>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-elab-run">--elab-run &lt;[options...] primary_unit [secondary_unit] [simulation_options...]&gt;</a>
+</li>
+        <li><a href="using/CommandReference.html#cmdoption-ghdl-file-to-xml">--file-to-xml</a>
+</li>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-format">--format=&lt;FORMAT&gt;</a>
+</li>
+        <li><a href="using/Simulation.html#cmdoption-ghdl-fst">--fst=&lt;FILENAME&gt;</a>
+</li>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-gen-depends">--gen-depends &lt;[options] primary [secondary]&gt;</a>
+</li>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-gen-makefile">--gen-makefile &lt;[options] primary [secondary]&gt;</a>
+</li>
+        <li><a href="using/CommandReference.html#cmdoption-ghdl-GHDL1">--GHDL1&lt;=COMMAND&gt;</a>
+</li>
+        <li><a href="using/CommandReference.html#cmdoption-ghdl-help">--help</a>, <a href="using/Simulation.html#cmdoption-ghdl-help">[1]</a>
+</li>
+        <li><a href="using/Simulation.html#cmdoption-ghdl-ieee-asserts">--ieee-asserts=&lt;POLICY&gt;</a>
+</li>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-ieee">--ieee=&lt;IEEE_VAR&gt;</a>
+</li>
+        <li><a href="using/CommandReference.html#cmdoption-ghdl-lines">--lines &lt;files...&gt;</a>
+</li>
+        <li><a href="using/CommandReference.html#cmdoption-ghdl-link">--link &lt;[options] primary_unit [secondary_unit]&gt;</a>
+</li>
+        <li><a href="using/CommandReference.html#cmdoption-ghdl-LINK">--LINK&lt;=COMMAND&gt;</a>
+</li>
+        <li><a href="using/CommandReference.html#cmdoption-ghdl-list-link">--list-link &lt;primary_unit [secondary_unit]&gt;</a>
+</li>
+        <li><a href="using/Simulation.html#cmdoption-ghdl-max-stack-alloc">--max-stack-alloc=&lt;N&gt;</a>
+</li>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-mb-comments">--mb-comments</a>
+</li>
+        <li><a href="using/Synthesis.html#cmdoption-ghdl-no-assert-cover">--no-assert-cover</a>
+</li>
+        <li><a href="using/Synthesis.html#cmdoption-ghdl-no-formal">--no-formal</a>
+</li>
+        <li><a href="using/Simulation.html#cmdoption-ghdl-no-run">--no-run</a>
+</li>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-no-vital-checks">--no-vital-checks</a>
+</li>
+        <li><a href="using/CommandReference.html#cmdoption-ghdl-pp-html">--pp-html &lt;[options] file...&gt;</a>
+</li>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-PREFIX">--PREFIX=&lt;PATH&gt;</a>
+</li>
+        <li><a href="using/Simulation.html#cmdoption-ghdl-psl-report">--psl-report=&lt;FILENAME&gt;</a>
+</li>
+        <li><a href="using/Simulation.html#cmdoption-ghdl-read-wave-opt">--read-wave-opt=&lt;FILENAME&gt;</a>
+</li>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-remove">--remove &lt;[options]&gt;</a>
+</li>
+        <li><a href="using/Simulation.html#cmdoption-ghdl-sdf">--sdf=&lt;PATH=FILENAME&gt;</a>
+</li>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-std">--std=&lt;STANDARD&gt;</a>
+</li>
+        <li><a href="using/Simulation.html#cmdoption-ghdl-stop-delta">--stop-delta=&lt;N&gt;</a>
+</li>
+        <li><a href="using/Simulation.html#cmdoption-ghdl-stop-time">--stop-time=&lt;TIME&gt;</a>
+</li>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-syn-binding">--syn-binding</a>
+</li>
+        <li><a href="using/Synthesis.html#cmdoption-ghdl-0">--synth &lt;[options] files... -e primary_unit [secondary_unit]&gt;</a>
+</li>
+        <li><a href="using/Synthesis.html#cmdoption-ghdl-synth">--synth &lt;[options] primary_unit [secondary_unit]&gt;</a>
+</li>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-time-resolution">--time-resolution=&lt;UNIT&gt;</a>
+</li>
+        <li><a href="using/Simulation.html#cmdoption-ghdl-unbuffered">--unbuffered</a>
+</li>
+        <li><a href="using/Simulation.html#cmdoption-ghdl-vcd-nodate">--vcd-nodate</a>
+</li>
+        <li><a href="using/Simulation.html#cmdoption-ghdl-vcd">--vcd=&lt;FILENAME&gt;</a>
+</li>
+        <li><a href="using/Simulation.html#cmdoption-ghdl-vcdgz">--vcdgz=&lt;FILENAME&gt;</a>
+</li>
+        <li><a href="using/Synthesis.html#cmdoption-ghdl-vendor-library">--vendor-library=NAME</a>
+</li>
+        <li><a href="using/CommandReference.html#cmdoption-ghdl-version">--version</a>
+</li>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-vital-checks">--vital-checks</a>
+</li>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-vpi-cflags">--vpi-cflags</a>
+</li>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-vpi-compile">--vpi-compile &lt;command&gt;</a>
+</li>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-vpi-include-dir">--vpi-include-dir</a>
+</li>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-vpi-ldflags">--vpi-ldflags</a>
+</li>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-vpi-library-dir">--vpi-library-dir</a>
+</li>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-vpi-library-dir-unix">--vpi-library-dir-unix</a>
+</li>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-vpi-link">--vpi-link &lt;command&gt;</a>
+</li>
+        <li><a href="using/Simulation.html#cmdoption-ghdl-vpi-trace">--vpi-trace=&lt;FILE&gt;</a>
+</li>
+        <li><a href="using/Simulation.html#cmdoption-ghdl-vpi">--vpi=&lt;FILENAME&gt;</a>
+</li>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-warn-binding">--warn-binding</a>
+</li>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-warn-body">--warn-body</a>
+</li>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-warn-default-binding">--warn-default-binding</a>
+</li>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-warn-delayed-checks">--warn-delayed-checks</a>
+</li>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-warn-error">--warn-error</a>
+</li>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-warn-hide">--warn-hide</a>
+</li>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-warn-library">--warn-library</a>
+</li>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-warn-nested-comment">--warn-nested-comment</a>
+</li>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-warn-others">--warn-others</a>
+</li>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-warn-parenthesis">--warn-parenthesis</a>
+</li>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-warn-pure">--warn-pure</a>
+</li>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-warn-reserved">--warn-reserved</a>
+</li>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-warn-runtime-error">--warn-runtime-error</a>
+</li>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-warn-shared">--warn-shared</a>
+</li>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-warn-specs">--warn-specs</a>
+</li>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-warn-static">--warn-static</a>
+</li>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-warn-unused">--warn-unused</a>
+</li>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-warn-vital-generic">--warn-vital-generic</a>
+</li>
+        <li><a href="using/Simulation.html#cmdoption-ghdl-wave">--wave=&lt;FILENAME&gt;</a>
+</li>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-work">--work=&lt;LIB_NAME&gt;</a>
+</li>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-workdir">--workdir=&lt;DIR&gt;</a>
+</li>
+        <li><a href="using/Simulation.html#cmdoption-ghdl-write-wave-opt">--write-wave-opt=&lt;FILENAME&gt;</a>
+</li>
+        <li><a href="using/Simulation.html#cmdoption-ghdl-xref-html">--xref-html [options] files...</a>
+</li>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-a">-a &lt;[options...] file...&gt;</a>
+</li>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-mb-comments">-C</a>
+</li>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-c">-c &lt;[options] file... -&lt;e|r&gt; primary_unit [secondary_unit]&gt;</a>
+</li>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-e">-e &lt;[options...] primary_unit [secondary_unit]&gt;</a>
+</li>
+        <li><a href="using/CommandReference.html#cmdoption-ghdl-f">-f &lt;file...&gt;</a>
+</li>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-fcaret-diagnostics">-fcaret-diagnostics</a>
+</li>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-fcolor-diagnostics">-fcolor-diagnostics</a>
+</li>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-fdiagnostics-show-option">-fdiagnostics-show-option</a>
+</li>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-fexplicit">-fexplicit</a>
+</li>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-fno-caret-diagnostics">-fno-caret-diagnostics</a>
+</li>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-fno-color-diagnostics">-fno-color-diagnostics</a>
+</li>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-fno-diagnostics-show-option">-fno-diagnostics-show-option</a>
+</li>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-fpsl">-fpsl</a>
+</li>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-frelaxed">-frelaxed</a>
+</li>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-frelaxed-rules">-frelaxed-rules</a>
+</li>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-fsynopsys">-fsynopsys</a>
+</li>
+        <li><a href="using/Simulation.html#cmdoption-ghdl-gGENERIC">-gGENERIC=VALUE</a>
+</li>
+        <li><a href="using/Synthesis.html#cmdoption-ghdl-gNAME">-gNAME=VALUE</a>
+</li>
+        <li><a href="using/CommandReference.html#cmdoption-ghdl-help">-h</a>
+</li>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-i">-i &lt;[options] file...&gt;</a>
+</li>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-m">-m &lt;[options] primary [secondary]&gt;</a>
+</li>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-o">-o=&lt;FNAME&gt;</a>
+</li>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-P-DIRECTORY">-P&lt;DIRECTORY&gt;</a>
+</li>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-r">-r &lt;[options...] primary_unit [secondary_unit] [simulation_options...]&gt;</a>
+</li>
+        <li><a href="using/InvokingGHDL.html#cmdoption-ghdl-s">-s &lt;[options] files&gt;</a>
+</li>
+        <li><a href="using/CommandReference.html#cmdoption-ghdl-version">-v</a>, <a href="using/InvokingGHDL.html#cmdoption-ghdl-v">[1]</a>
+</li>
+        <li><a href="using/CommandReference.html#cmdoption-ghdl-Wa-OPTION">-Wa,&lt;OPTION&gt;</a>
+</li>
+        <li><a href="using/CommandReference.html#cmdoption-ghdl-Wc-OPTION">-Wc,&lt;OPTION&gt;</a>
+</li>
+        <li><a href="using/CommandReference.html#cmdoption-ghdl-Wl-OPTION">-Wl,&lt;OPTION&gt;</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="using/InvokingGHDL.html#index-0">GHDL_PREFIX</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="I">I</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="using/ImplementationOfVHDL.html#index-1">IEEE 1076</a>
+</li>
+      <li><a href="using/InvokingGHDL.html#index-13">IEEE 1076.3</a>
+</li>
+      <li><a href="using/ImplementationOfVITAL.html#index-1">IEEE 1076.4</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="using/ImplementationOfVHDL.html#index-2">IEEE 1076a</a>
+</li>
+      <li><a href="using/InvokingGHDL.html#index-11">IEEE 1164</a>
+</li>
+      <li><a href="using/InvokingGHDL.html#index-16">ieee library</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="M">M</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="using/InvokingGHDL.html#index-30">Math_Complex</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="using/InvokingGHDL.html#index-29">Math_Real</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="S">S</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="using/ImplementationOfVITAL.html#index-3">SDF</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="using/InvokingGHDL.html#index-17">synopsys library</a>
+</li>
+      <li><a href="using/Synthesis.html#index-0">synthesis command</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="V">V</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="using/ImplementationOfVHDL.html#index-8">v00</a>
+</li>
+      <li><a href="using/ImplementationOfVHDL.html#index-9">v02</a>
+</li>
+      <li><a href="using/ImplementationOfVHDL.html#index-10">v08</a>
+</li>
+      <li><a href="using/ImplementationOfVHDL.html#index-5">v87</a>
+</li>
+      <li><a href="using/ImplementationOfVHDL.html#index-6">v93</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="using/ImplementationOfVHDL.html#index-7">v93c</a>
+</li>
+      <li><a href="using/Simulation.html#index-2">value change dump</a>
+</li>
+      <li><a href="using/Simulation.html#index-1">vcd</a>
+</li>
+      <li><a href="using/ImplementationOfVHDL.html#index-0">VHDL standards</a>
+</li>
+      <li><a href="using/CommandReference.html#index-6">vhdl to html</a>
+</li>
+      <li><a href="using/ImplementationOfVITAL.html#index-0">VITAL</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="W">W</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="using/InvokingGHDL.html#index-15">WORK library</a>
+</li>
+  </ul></td>
+</tr></table>
+
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2002-2020, Tristan Gingold and contributors
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/buildthedocs/sphinx.theme">theme</a>
+    
+    provided by <a href="https://buildthedocs.github.io">Build the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

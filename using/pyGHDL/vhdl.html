@@ -1,0 +1,334 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>libghdl.vhdl &mdash; GHDL 1.0-dev documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../../_static/icon.png"/>
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="author" title="About these documents" href="../../about.html" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="libghdl.utils" href="utils.html" />
+    <link rel="prev" title="libghdl" href="libghdl.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html">
+          
+
+          
+            
+            <img src="../../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0-dev
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../about.html">About GHDL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../contribute.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../licenses.html">Copyrights | Licenses</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Getting GHDL</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting/Releases.html">Releases and sources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting/index.html">Building GHDL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting/PrecompileVendorPrimitives.html">Precompile Vendor Primitives</a></li>
+</ul>
+<p class="caption"><span class="caption-text">GHDL usage</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../quick_start/README.html">Quick Start Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../InvokingGHDL.html">Invoking GHDL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Simulation.html">Simulation (runtime)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Synthesis.html">Synthesis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../CommandReference.html">Additional Command Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Foreign.html">Co-simulation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ImplementationOfVHDL.html">Implementation of VHDL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ImplementationOfVITAL.html">Implementation of VITAL</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Python Interface</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="libghdl.html">libghdl</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">libghdl.vhdl</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#libghdl-vhdl-canon">libghdl.vhdl.canon</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#libghdl-vhdl-elocations">libghdl.vhdl.elocations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#libghdl-vhdl-flists">libghdl.vhdl.flists</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#libghdl-vhdl-formatters">libghdl.vhdl.formatters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#libghdl-vhdl-ieee">libghdl.vhdl.ieee</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#libghdl-vhdl-lists">libghdl.vhdl.lists</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#libghdl-vhdl-nodes">libghdl.vhdl.nodes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#libghdl-vhdl-nodes-meta">libghdl.vhdl.nodes_meta</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#libghdl-vhdl-nodes-utils">libghdl.vhdl.nodes_utils</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#libghdl-vhdl-parse">libghdl.vhdl.parse</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#libghdl-vhdl-scanner">libghdl.vhdl.scanner</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#libghdl-vhdl-sem">libghdl.vhdl.sem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#libghdl-vhdl-sem-lib">libghdl.vhdl.sem_lib</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#libghdl-vhdl-std-package">libghdl.vhdl.std_package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#libghdl-vhdl-tokens">libghdl.vhdl.tokens</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="utils.html">libghdl.utils</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Development</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../development/Debugging.html">Debugging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../development/CodingStyle.html">Coding Style</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Internals</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../internals/Overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../internals/Frontend.html">Front-end</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../internals/AST.html">AST</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../internals/RTI.html">Run Time Information (RTI)</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Index</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../genindex.html">Index</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">GHDL</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">Python Interface</a> &raquo;</li>
+        
+      <li>libghdl.vhdl</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            
+              <a href="https://github.com/antonblanchard/ghdl/blob/master/doc/using/pyGHDL/vhdl.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="libghdl-vhdl">
+<h1>libghdl.vhdl<a class="headerlink" href="#libghdl-vhdl" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="libghdl-vhdl-canon">
+<h2>libghdl.vhdl.canon<a class="headerlink" href="#libghdl-vhdl-canon" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="libghdl-vhdl-elocations">
+<h2>libghdl.vhdl.elocations<a class="headerlink" href="#libghdl-vhdl-elocations" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="libghdl-vhdl-flists">
+<h2>libghdl.vhdl.flists<a class="headerlink" href="#libghdl-vhdl-flists" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="libghdl-vhdl-formatters">
+<h2>libghdl.vhdl.formatters<a class="headerlink" href="#libghdl-vhdl-formatters" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="libghdl-vhdl-ieee">
+<h2>libghdl.vhdl.ieee<a class="headerlink" href="#libghdl-vhdl-ieee" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="libghdl-vhdl-lists">
+<h2>libghdl.vhdl.lists<a class="headerlink" href="#libghdl-vhdl-lists" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="libghdl-vhdl-nodes">
+<h2>libghdl.vhdl.nodes<a class="headerlink" href="#libghdl-vhdl-nodes" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="libghdl-vhdl-nodes-meta">
+<h2>libghdl.vhdl.nodes_meta<a class="headerlink" href="#libghdl-vhdl-nodes-meta" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="libghdl-vhdl-nodes-utils">
+<h2>libghdl.vhdl.nodes_utils<a class="headerlink" href="#libghdl-vhdl-nodes-utils" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="libghdl-vhdl-parse">
+<h2>libghdl.vhdl.parse<a class="headerlink" href="#libghdl-vhdl-parse" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="libghdl-vhdl-scanner">
+<h2>libghdl.vhdl.scanner<a class="headerlink" href="#libghdl-vhdl-scanner" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="libghdl-vhdl-sem">
+<h2>libghdl.vhdl.sem<a class="headerlink" href="#libghdl-vhdl-sem" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="libghdl-vhdl-sem-lib">
+<h2>libghdl.vhdl.sem_lib<a class="headerlink" href="#libghdl-vhdl-sem-lib" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="libghdl-vhdl-std-package">
+<h2>libghdl.vhdl.std_package<a class="headerlink" href="#libghdl-vhdl-std-package" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="libghdl-vhdl-tokens">
+<h2>libghdl.vhdl.tokens<a class="headerlink" href="#libghdl-vhdl-tokens" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="utils.html" class="btn btn-neutral float-right" title="libghdl.utils" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="libghdl.html" class="btn btn-neutral float-left" title="libghdl" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2002-2020, Tristan Gingold and contributors
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/buildthedocs/sphinx.theme">theme</a>
+    
+    provided by <a href="https://buildthedocs.github.io">Build the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
